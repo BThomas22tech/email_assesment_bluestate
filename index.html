@@ -36,10 +36,22 @@
         a:link {
             color: #0000EE;
             text-decoration: underline;
-          }
+        }
 
         ul {
             list-style-type: none;
+        }
+        @media screen and (max-width: 600px) {
+        img,table{
+            width: 100% !important;
+        }
+        }
+        @media screen and (min-width: 601px) {
+            img,
+            table {
+                max-width: 600px !important;
+                width: 100% !important;
+            }
         }
     </style>
 
@@ -47,12 +59,12 @@
 
 <body>
 
-    <table role="presentation" align="center"
-        style="width: 600px; border-collapse: collapse; border: 0; border-spacing: 0; background: #ffffff;">
+    <table  class="outer_table" role="presentation" align="center"
+        style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0; background: #ffffff;">
         <tr align="center" style="padding:0;">
             <td>
                 <table role="presentation"
-                    style="width:602px;border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;text-align:left;">
+                    style="border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;text-align:left;">
                     <tr>
                         <td style="padding:0;">
                             <table role="presentation">
@@ -60,7 +72,7 @@
                                     <td style="padding: 20px 30px 10px 30px;">
 
                                         <table role="presentation"
-                                            style="width: 600px;border-collapse:collapse;border:0;border-spacing:0;">
+                                            style="border-collapse:collapse;border:0;border-spacing:0;">
                                             <tr>
                                                 <td style="padding:20px 30px 16px 30px;">
                                                     <h1>Hi there,</h1>
@@ -116,7 +128,7 @@
                                                         <br><br><b><a
                                                             href="https://www.covenanthouse.org/donation-options/donate-now">With
                                                             your gift today, your compassion goes twice as far. Donate
-                                                            now.</a><b>
+                                                            now.</a></b>
                                                         <br><br>
                                                         We’re grateful for your support,
                                                         <br><br>The Covenant House Team
